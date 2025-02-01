@@ -1,0 +1,40 @@
+# Gross Profit      = Total Revenue - Cost of Revenue
+# Operating Income  = Gross Profit - Operating expenses
+# Net Income        = Operating Income - Interest Expense + Other income - Income Taxes
+# EBIT              = Net Income + Income Taxes + Interest Expense
+# EBITDA            = EBIT + Reconciled Depreciation
+
+FINANICAL_KEY:
+    - [TotalRevenue,            INCOME_STATEMENT,   DIVDE_BILLION]
+    - [OperatingIncome,         INCOME_STATEMENT,   DIVDE_BILLION]
+    - [NetIncome,               INCOME_STATEMENT,   DIVDE_BILLION]
+    - [EBITDA,                  INCOME_STATEMENT,   DIVDE_BILLION]
+    - [CurrentAssets,           BALANCE_SHEET,      DIVDE_BILLION]
+    - [CurrentDebt,             BALANCE_SHEET,      DIVDE_BILLION]
+    - [LongTermDebt,            BALANCE_SHEET,      DIVDE_BILLION]
+    - [StockholdersEquity,      BALANCE_SHEET,      DIVDE_BILLION]
+    - [ShareIssued,             BALANCE_SHEET,      NONE]
+    - [OperatingCashFlow,       CASH_FLOW,          DIVDE_BILLION]
+    - [InvestingCashFlow,       CASH_FLOW,          DIVDE_BILLION]
+    - [FinancingCashFlow,       CASH_FLOW,          DIVDE_BILLION]
+    - [BasicEPS,                INCOME_STATEMENT,   NONE]
+
+
+
+
+#  = [
+#     ("TotalRevenue", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.DIVDE_BILLION),
+#     ("OperatingIncome", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.DIVDE_BILLION),
+#     ("NetIncome", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.DIVDE_BILLION),
+#     ("ShareIssued", INFO_TYPE.BALANCE_SHEET, POST_PROCESS.DIVDE_BILLION),
+#     # ("CostOfRevenue", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.DIVDE_BILLION),
+#     # ("GrossProfit", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.DIVDE_BILLION),
+#     # ("OperatingExpense", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.DIVDE_BILLION),
+#     # ("NetNonOperatingInterestIncomeExpense", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.DIVDE_BILLION),
+#     # ("OtherIncomeExpense", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.DIVDE_BILLION),
+#     # ("PretaxIncome", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.DIVDE_BILLION),
+#     # ("TaxProvision", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.DIVDE_BILLION),
+#     ("BasicEPS", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.NONE),
+#     ("EBITDA", INFO_TYPE.INCOME_STATEMENT, POST_PROCESS.DIVDE_BILLION),
+#     # ("trailingPE", INFO_TYPE.SOTCK_INFO, POST_PROCESS.NONE),
+# ]
